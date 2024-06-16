@@ -1,0 +1,23 @@
+.cursor, .trail {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    z-index: 1000;
+  }
+  
+  .cursor {
+    background-color: rgba(9, 179, 247, 0.8); /* Main cursor color */
+    box-shadow: 0 0 15px rgba(5, 155, 242, 0.8), 0 0 30px rgba(5, 167, 237, 0.6);
+  }
+  
+  .trail {
+    opacity: 0.6;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    background-color: rgba(4, 202, 247, 0.6); /* Trail color */
+  }
+  

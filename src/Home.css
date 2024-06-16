@@ -1,0 +1,16 @@
+.home {
+    text-align: center;
+    padding: 50px;
+    background-image: url('./bg.jpg'); /* Adjust the path based on your project structure */
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  

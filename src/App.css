@@ -1,0 +1,114 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('bg.jpg'); /* Adjust the path based on your project structure */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Set the text color to white */
+}
+
+.home-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.home-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+/* Add these styles to your App.css file */
+.resume-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.download-button {
+  background-color: #FF5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.download-button:hover {
+  background-color: #E64A19;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white; /* Set the text color to white */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2, footer p {
+  margin: 10px 0;
+  color: white; /* Ensure footer text is white */
+}
+
+footer .social-icons {
+  margin: 10px 0;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  color: white; /* Ensure social icons are white */
+  font-size: 1.5em;
+}
