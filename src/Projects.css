@@ -1,0 +1,28 @@
+.projects-container {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+}
+
+.projects-list li {
+  margin: 10px 0;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.projects-list li:hover {
+  transform: scale(1.05);
+}
+
+.projects-list h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.projects-list p {
+  margin: 10px 0 0 0;
+}
